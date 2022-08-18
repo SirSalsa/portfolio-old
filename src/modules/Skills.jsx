@@ -27,6 +27,6 @@ export default function Skills() {
                 </article>
             </div>
         </>
-    );
+    )
 
-};
+}
