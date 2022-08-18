@@ -6,12 +6,19 @@
 }
 
 //// Variables ////
+
 // Colors
-$darkbgcolor: #08252b;
-$lightbgcolor: #0d343b;
+// Background
+$main_bgcolor: #08252b;
+$side_bgcolor: #0d343b;
+$side_bordercolor: #164c58;
+
+// Text
+$text_color: #ff941b;
+$text_hovercolor: #F9C784;
 
 body {
-    background-color: $darkbgcolor;
+    background-color: $main_bgcolor;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -40,8 +47,8 @@ nav {
     grid-column: 1/4;
     grid-row: 1/2;
 
-    background-color: $lightbgcolor;
-    border-bottom: 5px solid #164c58;
+    background-color: $side_bgcolor;
+    border-bottom: 5px solid $side_bordercolor;
 
     position: relative;
     z-index: 999;
@@ -62,18 +69,18 @@ nav>img {
 
 .navbtn {
     font-size: 20px;
-    color: #ff941b;
+    color: $text_color;
     padding: 10px;
 }
 
 .navbtn:hover {
     cursor: pointer;
-    color: #F9C784;
+    color: $text_hovercolor;
 }
 
 #nav_active {
-    color: #F9C784;
-    border-bottom: #F9C784 6px double;
+    color: $text_hovercolor;
+    border-bottom: $text_hovercolor 6px double;
 }
 
 // Main
@@ -115,7 +122,7 @@ main {
     padding-top: 15px;
     padding-bottom: 20px;
     font-size: 30px;
-    color: #ff941b;
+    color: $text_color;
 }
 
 #home_desc {
@@ -141,7 +148,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    background-color: #ff941b;
+    background-color: $text_color;
     padding: 20px;
     width: 100px;
     border-radius: 20px;
@@ -151,7 +158,7 @@ main {
 
 .home_links>article:hover {
     cursor: pointer;
-    color: #F9C784;
+    color: $text_hovercolor;
 }
 
 .home_links>article>p {
@@ -169,7 +176,7 @@ main {
     font-size: 45px;
     border-bottom: solid 5px;
     padding-bottom: 10px;
-    color: #ff941b;
+    color: $text_color;
 }
 
 .about_wrapper {
