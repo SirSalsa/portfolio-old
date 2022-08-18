@@ -5,7 +5,7 @@ import About from "./modules/About";
 import Skills from "./modules/Skills";
 import Footer from "./modules/Footer";
 import Navbar from "./modules/Navbar";
-import './style/style.css';
+import './style/style.scss';
 
 function App() {
 
