@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #08252b;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 0.55fr 1fr 0.55fr;
+    grid-template-rows: 0.15fr auto 0.2fr;
+}
+
+/* Navigation bar/header */
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    font-weight: bold;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    background-color: #0d343b;
+    border-bottom: 5px solid #164c58;
+
+    position: relative;
+    z-index: 999;
+}
+
+/* Navigation bar when scrolling */
+.sticky-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav>img {
+    padding-right: 5%;
+    width: 75px;
+}
+
+.navbtn {
+    font-size: 20px;
+    color: #ff941b;
+    padding: 10px;
+}
+
+.navbtn:hover {
+    cursor: pointer;
+    color: #F9C784;
+}
+
+#nav_active {
+    color: #F9C784;
+    border-bottom: #F9C784 6px double;
+}
+
+/* Main */
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    /*Might want to change later in case of gallery in projects*/
+    justify-content: center;
+
+    /* min-height: 100vh; */
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Home page */
+.home_wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#home_hello {
+    color: white;
+    font-style: normal;
+    text-decoration-line: none;
+    font-size: 40px;
+}
+
+#home_name {
+    font-size: 60px;
+}
+
+#home_jobtitle {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #ff941b;
+}
+
+#home_desc {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+#home_img {
+    width: 400px;
+}
+
+.home_links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 15%;
+    padding-top: 40px;
+}
+
+.home_links>article {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ff941b;
+    padding: 20px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home_links>article:hover {
+    cursor: pointer;
+    color: #F9C784;
+}
+
+.home_links>article>p {
+    padding-left: 10px;
+}
+
+/* About page */
+.about_header {
+    display: flex;
+    justify-content: center;
+}
+
+#about_title {
+    margin-bottom: 20px;
+    font-size: 45px;
+    border-bottom: solid 5px;
+    padding-bottom: 10px;
+    color: #ff941b;
+}
+
+.about_wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    gap: 35px;
+}
+
+#about_img {
+    width: 450px;
+}
+
+#about_text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* Skills */
+.skills_wrapper {
+    color: red;
+}
+
+#skills_img {
+    width: 150px;
+}
+
+/* Footer */
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+    background-color: #0d343b;
+    border-top: 5px solid #164c58;
+}
+
+footer>p {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.footwrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 4%;
+}
+
+.footlinks {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 30px;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1050px) {
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /*Home*/
+    #home_hello {
+        font-size: 30px;
+    }
+
+    #home_name {
+        font-size: 50px;
+    }
+
+    #home_jobtitle {
+        font-size: 25px;
+    }
+
+    #home_desc {
+        font-size: 15px;
+    }
+
+    #home_img {
+        width: 300px;
+    }
+
+    /*About*/
+    #about_img {
+        width: 375px;
+    }
+
+    #about_text {
+        font-size: 15px;
+    }
+
+}
+
+/* Phone breakpoint */
+@media (max-width: 550px) {
+
+    /*Navigation bar*/
+    nav {
+        padding: 5px, 15px, 5px, 15px;
+        gap: 0px;
+    }
+
+    nav>img {
+        padding-right: 5px;
+        width: 50px;
+    }
+
+    .navbtn {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    /*Home*/
+    .home_wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_wrapper>article {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #home_hello {
+        font-size: 25px;
+    }
+
+    #home_name {
+        font-size: 40px;
+    }
+
+    #home_jobtitle {
+        font-size: 20px;
+    }
+
+    #home_desc {
+        font-size: 15px;
+    }
+
+    #home_img {
+        padding-top: 35px;
+        width: 250px;
+    }
+
+    .home_links {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .home_links>article {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 100px;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    /*About*/
+    .about_wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_wrapper>article {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #about_img {
+        width: 250px;
+    }
+
+    #about_text {
+        font-size: 15px;
+    }
+
+    /*Footer*/
+    footer>p {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footwrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+}
+
+/* Fold phone breakpoint */
+@media (max-width: 300px) {
+
+    /*Navigation bar*/
+    nav {
+        padding: 5px, 0px, 5px, 0px;
+        gap: 0px;
+    }
+
+    nav>img {
+        width: 40px;
+    }
+
+    .navbtn {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+
+}
