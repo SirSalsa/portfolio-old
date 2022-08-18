@@ -5,8 +5,13 @@
     outline: 0;
 }
 
+//// Variables ////
+// Colors
+$darkbgcolor: #08252b;
+$lightbgcolor: #0d343b;
+
 body {
-    background-color: #08252b;
+    background-color: $darkbgcolor;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,7 +24,7 @@ body {
     grid-template-rows: 0.15fr auto 0.2fr;
 }
 
-/* Navigation bar/header */
+// Navigation bar/header
 nav {
     display: flex;
     flex-flow: row nowrap;
@@ -35,14 +40,14 @@ nav {
     grid-column: 1/4;
     grid-row: 1/2;
 
-    background-color: #0d343b;
+    background-color: $lightbgcolor;
     border-bottom: 5px solid #164c58;
 
     position: relative;
     z-index: 999;
 }
 
-/* Navigation bar when scrolling */
+// Navigation bar when scrolling
 .sticky-nav {
     position: fixed;
     width: 100%;
@@ -71,23 +76,23 @@ nav>img {
     border-bottom: #F9C784 6px double;
 }
 
-/* Main */
+// Main
 main {
     grid-column: 2/3;
     grid-row: 2/3;
 
     display: flex;
     flex-flow: column nowrap;
-    /*Might want to change later in case of gallery in projects*/
+    //Might want to change later in case of gallery in projects
     justify-content: center;
 
-    /* min-height: 100vh; */
+    // min-height: 100vh;
 
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-/* Home page */
+// Home page 
 .home_wrapper {
     display: flex;
     align-items: center;
@@ -153,7 +158,7 @@ main {
     padding-left: 10px;
 }
 
-/* About page */
+// About page
 .about_header {
     display: flex;
     justify-content: center;
@@ -187,7 +192,7 @@ main {
     text-align: center;
 }
 
-/* Skills */
+// Skills
 .skills_wrapper {
     color: red;
 }
@@ -196,7 +201,7 @@ main {
     width: 150px;
 }
 
-/* Footer */
+// Footer
 footer {
     grid-column: 1/4;
     grid-row: 3/4;
@@ -226,14 +231,14 @@ footer>p {
     padding-bottom: 30px;
 }
 
-/* Tablet breakpoint */
+// Tablet breakpoint
 @media (max-width: 1050px) {
 
     .wrapper {
         grid-template-columns: 1fr;
     }
 
-    /*Home*/
+    //Home
     #home_hello {
         font-size: 30px;
     }
@@ -254,7 +259,7 @@ footer>p {
         width: 300px;
     }
 
-    /*About*/
+    //About
     #about_img {
         width: 375px;
     }
@@ -265,10 +270,10 @@ footer>p {
 
 }
 
-/* Phone breakpoint */
+// Phone breakpoint
 @media (max-width: 550px) {
 
-    /*Navigation bar*/
+    //Navigation bar
     nav {
         padding: 5px, 15px, 5px, 15px;
         gap: 0px;
@@ -284,7 +289,7 @@ footer>p {
         padding-left: 15px;
     }
 
-    /*Home*/
+    //Home
     .home_wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -333,7 +338,7 @@ footer>p {
         margin: 10px;
     }
 
-    /*About*/
+    //About
     .about_wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -355,7 +360,7 @@ footer>p {
         font-size: 15px;
     }
 
-    /*Footer*/
+    //Footer
     footer>p {
         display: flex;
         flex-flow: row nowrap;
@@ -372,10 +377,10 @@ footer>p {
 
 }
 
-/* Fold phone breakpoint */
+// Fold phone breakpoint
 @media (max-width: 300px) {
 
-    /*Navigation bar*/
+    //Navigation bar
     nav {
         padding: 5px, 0px, 5px, 0px;
         gap: 0px;
