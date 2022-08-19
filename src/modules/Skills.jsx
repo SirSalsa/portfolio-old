@@ -8,7 +8,10 @@ export default function Skills() {
     const react_url = new URL('../media/skills/reactjs.png', import.meta.url);
     const mysql_url = new URL('../media/skills/mysql.png', import.meta.url);
     const restful_url = new URL('../media/skills/api_rest.png', import.meta.url);
+    const agile_url = new URL('../media/skills/agile.png', import.meta.url);
     const github_url = new URL('../media/skills/github.png', import.meta.url);
+    const jira_url = new URL('../media/skills/jira.png', import.meta.url);
+    const trello_url = new URL('../media/skills/trello.png', import.meta.url);
 
     return (
         <>
@@ -26,6 +29,15 @@ export default function Skills() {
                     <img id="skills_img" src={js_url} alt="Javascript Logo" />
                     <p id="skills_text">JavaScript</p>
                 </article>
+                
+                <article>
+                    <img id="skills_img" src={react_url} alt="React.JS Logo" />
+                    <p id="skills_text">React JS</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={agile_url} alt="Github Logo" />
+                    <p id="skills_text">Agile</p>
+                </article>
                 <article>
                     <img id="skills_img" src={html_url} alt="HTML Logo" />
                     <p id="skills_text">HTML</p>
@@ -33,10 +45,6 @@ export default function Skills() {
                 <article>
                     <img id="skills_img" src={css_url} alt="CSS Logo" />
                     <p id="skills_text">CSS</p>
-                </article>
-                <article>
-                    <img id="skills_img" src={react_url} alt="React.JS Logo" />
-                    <p id="skills_text">React JS</p>
                 </article>
                 <article>
                     <img id="skills_img" src={mysql_url} alt="MySQL Logo" />
@@ -49,6 +57,14 @@ export default function Skills() {
                 <article>
                     <img id="skills_img" src={github_url} alt="Github Logo" />
                     <p id="skills_text">Github</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={jira_url} alt="Jira Logo" />
+                    <p id="skills_text">Jira</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={trello_url} alt="Trello Logo" />
+                    <p id="skills_text">Trello</p>
                 </article>
             </div>
         </>
