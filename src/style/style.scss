@@ -200,12 +200,35 @@ main {
 }
 
 // Skills
+.skills_header {
+    color: $text_color;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
 .skills_wrapper {
-    color: red;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills_wrapper>article {
+    border: 3px solid $side_bordercolor;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#skills_text {
+    text-align: center;
+    font-size: 20px;
 }
 
 #skills_img {
     width: 150px;
+    padding-bottom: 10px;
 }
 
 // Footer
@@ -213,8 +236,8 @@ footer {
     grid-column: 1/4;
     grid-row: 3/4;
 
-    background-color: #0d343b;
-    border-top: 5px solid #164c58;
+    background-color: $side_bgcolor;
+    border-top: 5px solid $side_bordercolor;
 }
 
 footer>p {
