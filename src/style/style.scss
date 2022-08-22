@@ -201,12 +201,20 @@ main {
 
 // Skills
 .skills_header {
-    color: $text_color;
     font-size: 25px;
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
 }
+
+#skills_title {
+    color: $text_color;
+}
+
+#skills_desc {
+    color: white;
+    padding-top: 10px;
+} 
 
 .skills_wrapper {
     display: flex;
@@ -227,7 +235,7 @@ main {
 }
 
 #skills_img {
-    width: 150px;
+    width: 100px;
     padding-bottom: 10px;
 }
 

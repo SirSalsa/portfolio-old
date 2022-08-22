@@ -12,12 +12,16 @@ export default function Skills() {
     const github_url = new URL('../media/skills/github.png', import.meta.url);
     const jira_url = new URL('../media/skills/jira.png', import.meta.url);
     const trello_url = new URL('../media/skills/trello.png', import.meta.url);
+    const vscode_url = new URL('../media/skills/vscode.png', import.meta.url);
+    const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);
+    const eclipse_url = new URL('../media/skills/eclipse.png', import.meta.url);
 
     return (
         <>
             <div className="skills_header">
                 <article>
-                    <h1 id="skills_title">My Skills</h1>
+                    <h1 id="skills_title">Skills & Tools</h1>
+                    <p id="skills_desc">These are the skills and tools I use to create my projects:</p>
                 </article>
             </div>
             <div className="skills_wrapper">
@@ -65,6 +69,18 @@ export default function Skills() {
                 <article>
                     <img id="skills_img" src={trello_url} alt="Trello Logo" />
                     <p id="skills_text">Trello</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={vscode_url} alt="VS Code Logo" />
+                    <p id="skills_text">VS Code</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={springboot_url} alt="Spring Boot Logo" />
+                    <p id="skills_text">Spring Boot</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={eclipse_url} alt="Eclipse Logo" />
+                    <p id="skills_text">Eclipse</p>
                 </article>
             </div>
         </>
