@@ -4,6 +4,7 @@ export default function Projects() {
 
     //Preview Image links
     const portfolio_small_url = new URL('../media/projects/portfolio/portfolio_small.png', import.meta.url);
+    const webshop_small_url = new URL('../media/projects/webshop/webshop_small.png', import.meta.url);
 
     //Skill Image links
     const java_url = new URL('../media/skills/java.png', import.meta.url);
@@ -26,17 +27,33 @@ export default function Projects() {
             </div>
             <div className="projects_wrapper">
                 <article>
-                    <img src={portfolio_small_url} alt="Image of Portfolio project"/>
-                    <h2 id="projects_title">Title</h2>
-                    <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
-                        The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                    <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
+                    <div>
+                        <h2 id="projects_title">Portfolio Site</h2>
+                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
+                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
                         <div id="projects_skills">
-                            <img src={js_url} alt="JS logo"/>
-                            <img src={react_url} alt="React JS logo"/>
-                            <img src={html_url} alt="HTML logo"/>
-                            <img src={css_url} alt="CSS logo"/>
+                            <img src={js_url} alt="JS logo" />
+                            <img src={react_url} alt="React JS logo" />
+                            <img src={html_url} alt="HTML logo" />
+                            <img src={css_url} alt="CSS logo" />
                             <img src={sass_url} alt="Sass logo" />
                         </div>
+                    </div>
+                </article>
+                <article>
+                    <img id="projects_img" src={webshop_small_url} alt="Image of Webshop project" />
+                    <div>
+                        <h2 id="projects_title">Webshop</h2>
+                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
+                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <div id="projects_skills">
+                            <img src={js_url} alt="JS logo" />
+                            <img src={react_url} alt="React JS logo" />
+                            <img src={html_url} alt="HTML logo" />
+                            <img src={css_url} alt="CSS logo" />
+                        </div>
+                    </div>
                 </article>
             </div>
         </>
