@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import Home from "./modules/Home";
 import Projects from "./modules/Projects";
 import About from "./modules/About";

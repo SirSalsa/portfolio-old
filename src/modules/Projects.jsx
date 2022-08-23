@@ -1,7 +1,45 @@
-export default function Projects(){
+import { useState } from "react";
+
+export default function Projects() {
+
+    //Preview Image links
+    const portfolio_small_url = new URL('../media/projects/portfolio/portfolio_small.png', import.meta.url);
+
+    //Skill Image links
+    const java_url = new URL('../media/skills/java.png', import.meta.url);
+    const html_url = new URL('../media/skills/html5.png', import.meta.url);
+    const css_url = new URL('../media/skills/css.png', import.meta.url);
+    const js_url = new URL('../media/skills/js.png', import.meta.url);
+    const react_url = new URL('../media/skills/reactjs.png', import.meta.url);
+    const mysql_url = new URL('../media/skills/mysql.png', import.meta.url);
+    const restful_url = new URL('../media/skills/api_rest.png', import.meta.url);
+    const sass_url = new URL('../media/skills/sass.png', import.meta.url);
+    const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);
+
+    // Usestate for rendering overlay with image gallery
+    const [projectstate, setProjectState] = useState("Default");
 
     return (
-        <h1>These are my projects</h1>
+        <>
+            <div className="projects_header">
+                <h1>My Projects</h1>
+            </div>
+            <div className="projects_wrapper">
+                <article>
+                    <img src={portfolio_small_url} alt="Image of Portfolio project"/>
+                    <h2 id="projects_title">Title</h2>
+                    <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
+                        The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <div id="projects_skills">
+                            <img src={js_url} alt="JS logo"/>
+                            <img src={react_url} alt="React JS logo"/>
+                            <img src={html_url} alt="HTML logo"/>
+                            <img src={css_url} alt="CSS logo"/>
+                            <img src={sass_url} alt="Sass logo" />
+                        </div>
+                </article>
+            </div>
+        </>
     )
 
 }

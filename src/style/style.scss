@@ -165,7 +165,22 @@ main {
     padding-left: 10px;
 }
 
-// About page
+// Projects Page
+.projects_header {
+    display: flex;
+    justify-content: center;
+    color: $text_color;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#projects_skills > img {
+    width: 25px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+// About Page
 .about_header {
     display: flex;
     justify-content: center;

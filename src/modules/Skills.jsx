@@ -39,10 +39,6 @@ export default function Skills() {
                     <p id="skills_text">React JS</p>
                 </article>
                 <article>
-                    <img id="skills_img" src={agile_url} alt="Github Logo" />
-                    <p id="skills_text">Agile</p>
-                </article>
-                <article>
                     <img id="skills_img" src={html_url} alt="HTML Logo" />
                     <p id="skills_text">HTML</p>
                 </article>
@@ -59,8 +55,16 @@ export default function Skills() {
                     <p id="skills_text">RESTful API</p>
                 </article>
                 <article>
+                    <img id="skills_img" src={springboot_url} alt="Spring Boot Logo" />
+                    <p id="skills_text">Spring Boot</p>
+                </article>
+                <article>
                     <img id="skills_img" src={github_url} alt="Github Logo" />
                     <p id="skills_text">Github</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={agile_url} alt="Github Logo" />
+                    <p id="skills_text">Agile</p>
                 </article>
                 <article>
                     <img id="skills_img" src={jira_url} alt="Jira Logo" />
@@ -74,10 +78,7 @@ export default function Skills() {
                     <img id="skills_img" src={vscode_url} alt="VS Code Logo" />
                     <p id="skills_text">VS Code</p>
                 </article>
-                <article>
-                    <img id="skills_img" src={springboot_url} alt="Spring Boot Logo" />
-                    <p id="skills_text">Spring Boot</p>
-                </article>
+                
                 <article>
                     <img id="skills_img" src={eclipse_url} alt="Eclipse Logo" />
                     <p id="skills_text">Eclipse</p>
