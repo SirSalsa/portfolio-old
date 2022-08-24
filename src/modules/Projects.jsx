@@ -30,7 +30,7 @@ export default function Projects() {
                 <h1>My Projects</h1>
             </div>
             <div className="projects_wrapper">
-                <article>
+                <article className="left_project">
                     <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
                     <div>
                         <h2 id="projects_title">Portfolio Site</h2>
@@ -51,7 +51,7 @@ export default function Projects() {
                         </form>
                     </div>
                 </article>
-                <article>
+                <article className="right_project">
                     <img id="projects_img" src={webshop_small_url} alt="Image of Webshop project" />
                     <div>
                         <h2 id="projects_title">Webshop</h2>
@@ -75,7 +75,7 @@ export default function Projects() {
                         </form>
                     </div>
                 </article>
-                <article>
+                <article className="left_project">
                     <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
                     <div>
                         <h2 id="projects_title">Portfolio Site</h2>

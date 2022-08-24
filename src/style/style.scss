@@ -12,6 +12,8 @@
 $main_bgcolor: #08252b;
 $side_bgcolor: #0d343b;
 $side_bordercolor: #164c58;
+$skill_bordercolor: #0b181b;
+$skill_backgroundcolor: #104955;
 
 // Text
 $text_color: #ff941b;
@@ -283,9 +285,10 @@ main {
 }
 
 .skills_wrapper>article {
-    border: 3px solid $side_bordercolor;
+    border: 4px solid $skill_bordercolor;
     padding: 20px;
     border-radius: 25px;
+    background-color: $skill_backgroundcolor;
 }
 
 #skills_text {

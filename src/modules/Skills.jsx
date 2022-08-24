@@ -33,7 +33,7 @@ export default function Skills() {
                     <img id="skills_img" src={js_url} alt="Javascript Logo" />
                     <p id="skills_text">JavaScript</p>
                 </article>
-                
+
                 <article>
                     <img id="skills_img" src={react_url} alt="React.JS Logo" />
                     <p id="skills_text">React JS</p>
@@ -67,10 +67,6 @@ export default function Skills() {
                     <p id="skills_text">Agile</p>
                 </article>
                 <article>
-                    <img id="skills_img" src={jira_url} alt="Jira Logo" />
-                    <p id="skills_text">Jira</p>
-                </article>
-                <article>
                     <img id="skills_img" src={trello_url} alt="Trello Logo" />
                     <p id="skills_text">Trello</p>
                 </article>
@@ -78,7 +74,7 @@ export default function Skills() {
                     <img id="skills_img" src={vscode_url} alt="VS Code Logo" />
                     <p id="skills_text">VS Code</p>
                 </article>
-                
+
                 <article>
                     <img id="skills_img" src={eclipse_url} alt="Eclipse Logo" />
                     <p id="skills_text">Eclipse</p>
