@@ -181,12 +181,47 @@ main {
 
 #projects_img {
     width: 450px;
+    margin: 10px;
 }
 
 #projects_skills > img {
     width: 25px;
     padding: 3px;
-    margin-top: 10px;
+    margin: 10px 0px 10px 7px;
+}
+
+#projects_buttons_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#projects_buttons{
+    gap: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $text_color;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 50px;
+}
+
+#projects_buttons:hover {
+    background-color: $text_hovercolor;
+}
+
+#projects_buttons>p {
+    margin-left: 5px;
+}
+
+#projects_buttons>img {
+    width: 35px;
+    margin-right: 5px;
 }
 
 // About Page

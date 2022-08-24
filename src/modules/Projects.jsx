@@ -17,6 +17,10 @@ export default function Projects() {
     const sass_url = new URL('../media/skills/sass.png', import.meta.url);
     const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);
 
+    //Button Image links
+    const github_url = new URL('../media/skills/github.png', import.meta.url);
+    const opentab_url = new URL('../media/projects/opentab.png', import.meta.url);
+
     // Usestate for rendering overlay with image gallery
     const [projectstate, setProjectState] = useState("Default");
 
@@ -39,6 +43,12 @@ export default function Projects() {
                             <img src={css_url} alt="CSS logo" />
                             <img src={sass_url} alt="Sass logo" />
                         </div>
+                        <form id="projects_buttons_wrapper" target="_blank">
+                            <button id="projects_buttons" formAction="https://github.com/SirSalsa/portfolio-vite">
+                                <p>View Repo</p>
+                                <img src={github_url} alt="Github Logo" />
+                            </button>
+                        </form>
                     </div>
                 </article>
                 <article>
@@ -53,6 +63,37 @@ export default function Projects() {
                             <img src={html_url} alt="HTML logo" />
                             <img src={css_url} alt="CSS logo" />
                         </div>
+                        <form id="projects_buttons_wrapper" target="_blank">
+                            <button id="projects_buttons" formAction="https://sirsalsa.github.io/JAVA21-AJS-slutprojekt-torsten-lareke/">
+                                <p>View Live</p>
+                                <img src={opentab_url} alt="New tab icon" />
+                            </button>
+                            <button id="projects_buttons" formAction="https://github.com/SirSalsa/JAVA21-AJS-slutprojekt-torsten-lareke">
+                                <p>View Repo</p>
+                                <img src={github_url} alt="Github Logo" />
+                            </button>
+                        </form>
+                    </div>
+                </article>
+                <article>
+                    <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
+                    <div>
+                        <h2 id="projects_title">Portfolio Site</h2>
+                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
+                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <div id="projects_skills">
+                            <img src={js_url} alt="JS logo" />
+                            <img src={react_url} alt="React JS logo" />
+                            <img src={html_url} alt="HTML logo" />
+                            <img src={css_url} alt="CSS logo" />
+                            <img src={sass_url} alt="Sass logo" />
+                        </div>
+                        <form id="projects_buttons_wrapper" target="_blank">
+                            <button id="projects_buttons" formAction="https://github.com/SirSalsa/portfolio-vite">
+                                <p>View Repo</p>
+                                <img src={github_url} alt="Github Logo" />
+                            </button>
+                        </form>
                     </div>
                 </article>
             </div>
