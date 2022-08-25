@@ -6,11 +6,10 @@ export default function Skills() {
     const css_url = new URL('../media/skills/css.png', import.meta.url);
     const js_url = new URL('../media/skills/js.png', import.meta.url);
     const react_url = new URL('../media/skills/reactjs.png', import.meta.url);
-    const mysql_url = new URL('../media/skills/mysql.png', import.meta.url);
+    const mysql_url = new URL('../media/skills/mysql_small.png', import.meta.url);
     const restful_url = new URL('../media/skills/api_rest.png', import.meta.url);
     const agile_url = new URL('../media/skills/agile.png', import.meta.url);
     const github_url = new URL('../media/skills/github.png', import.meta.url);
-    const jira_url = new URL('../media/skills/jira.png', import.meta.url);
     const trello_url = new URL('../media/skills/trello.png', import.meta.url);
     const vscode_url = new URL('../media/skills/vscode.png', import.meta.url);
     const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);

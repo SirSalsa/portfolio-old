@@ -176,9 +176,10 @@ main {
     margin-bottom: 25px;
 }
 
-.projects_wrapper > article {
+.projects_wrapper>article {
     margin-bottom: 15px;
     border: $side_bordercolor 5px solid;
+    align-items: center;
 }
 
 #projects_img {
@@ -186,7 +187,16 @@ main {
     margin: 10px;
 }
 
-#projects_skills > img {
+#projects_title {
+    margin-left: 10px;
+}
+
+#projects_desc {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#projects_skills>img {
     width: 25px;
     padding: 3px;
     margin: 10px 0px 10px 7px;
@@ -197,7 +207,7 @@ main {
     flex-flow: row nowrap;
 }
 
-#projects_buttons{
+#projects_buttons {
     gap: 50px;
     font-size: 16px;
     display: flex;
@@ -224,6 +234,16 @@ main {
 #projects_buttons>img {
     width: 35px;
     margin-right: 5px;
+}
+
+.left_project {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.right_project {
+    display: flex;
+    flex-flow: row-reverse nowrap;
 }
 
 // About Page
@@ -275,7 +295,7 @@ main {
 #skills_desc {
     color: white;
     padding-top: 10px;
-} 
+}
 
 .skills_wrapper {
     display: flex;
@@ -464,7 +484,7 @@ footer>p {
     .skills_wrapper>article {
         padding: 15px;
     }
-    
+
     #skills_img {
         width: 100px;
     }
