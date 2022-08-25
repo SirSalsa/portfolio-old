@@ -12,8 +12,9 @@
 $main_bgcolor: #08252b;
 $side_bgcolor: #0d343b;
 $side_bordercolor: #164c58;
+$project_backgroundcolor: #123c46;
 $skill_bordercolor: #0b181b;
-$skill_backgroundcolor: #104955;
+$skill_backgroundcolor: #0b363f;
 
 // Text
 $text_color: #ff941b;
@@ -180,6 +181,7 @@ main {
     margin-bottom: 15px;
     border: $side_bordercolor 5px solid;
     align-items: center;
+    background-color: $project_backgroundcolor;
 }
 
 #projects_img {
@@ -202,7 +204,7 @@ main {
     margin: 10px 0px 10px 7px;
 }
 
-#projects_buttons_wrapper {
+#projects_buttons_wrapper{
     display: flex;
     flex-flow: row nowrap;
 }
@@ -380,6 +382,20 @@ footer>p {
         width: 300px;
     }
 
+    //Projects
+    #projects_img {
+        width: 400px;
+    }
+
+    #projects_buttons {
+        font-size: 14px;
+        width: 130px
+    }
+
+    #projects_buttons>img {
+        width: 25px;
+    }
+
     //About
     #about_img {
         width: 375px;
@@ -479,6 +495,29 @@ footer>p {
 
     #about_text {
         font-size: 15px;
+    }
+
+    //Projects
+    #projects_img {
+        width: 100%;
+    }
+
+    .projects_wrapper>article {
+        text-align: center;
+    }    
+
+    #projects_buttons_wrapper{
+        justify-content: center;
+    }
+
+    .left_project {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .right_project {
+        display: flex;
+        flex-flow: column nowrap;
     }
 
     //Skills
