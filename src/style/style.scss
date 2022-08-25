@@ -285,6 +285,7 @@ main {
     font-size: 25px;
     display: flex;
     justify-content: center;
+    text-align: center;
     padding-bottom: 30px;
 }
 
@@ -481,12 +482,24 @@ footer>p {
     }
 
     //Skills
+    #skills_title {
+        font-size: 30px;
+    }
+
+    #skills_desc {
+        font-size: 20px;
+    }
+
     .skills_wrapper>article {
         padding: 15px;
     }
 
     #skills_img {
-        width: 100px;
+        width: 70px;
+    }
+
+    #skills_text {
+        font-size: 14px;
     }
 
     //Footer
