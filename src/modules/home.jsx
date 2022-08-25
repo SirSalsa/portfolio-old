@@ -18,7 +18,7 @@ export default function Home({updateNavState}) {
         <>
             <div className="home_wrapper">
                 <article>
-                    <a id="home_hello" href={hello_url}>Hello There, I'm</a>
+                    <p id="home_hello">Hello There, I'm</p>
                     <h1 id="home_name">Torsten Lareke</h1>
                     <h4 id="home_jobtitle">Java Developer Student</h4>
                     <p id="home_desc">I'm a Java Developer Student with Javascript knowledge, located in Malmö, Sweden. </p>

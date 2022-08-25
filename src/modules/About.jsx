@@ -3,6 +3,10 @@ export default function About() {
     //Image links
     const about_url = new URL('../media/about/about_me2.jpg', import.meta.url);
 
+    //Icon links
+    const cv_url = new URL('../media/about/cv.png', import.meta.url);
+    const grades_url = new URL('../media/about/grades.png', import.meta.url);
+
     return (
         <>
             <div className="about_header">
@@ -26,7 +30,18 @@ export default function About() {
                     </p>
                 </article>
             </div>
+            <div className="about_buttons">
+                <form id="about_buttons_wrapper" target="_blank">
+                    <button id="about_button" formAction="https://drive.google.com/file/d/1VEOzceSZkoz_yEeUf6tMlqYiHCzj3SLH/view?usp=sharing">
+                        <p>View Grades</p>
+                        <img src={grades_url} alt="Grades icon" />
+                    </button>
+                    <button id="about_button" formAction="https://drive.google.com/file/d/1Si_tCh2H4tBWxDw8gIC9U95xHoQWzAdy/view?usp=sharing">
+                        <p>View CV</p>
+                        <img src={cv_url} alt="CV icon" />
+                    </button>
+                </form>
+            </div>
         </>
     )
-
 }
