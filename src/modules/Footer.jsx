@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <p>This website is programmed and designed by me.</p>
+            
             <div className="footwrapper">
                 <div className="footlinks">
                     <a href="mailto:torsten.lareke@hotmail.se">
@@ -25,6 +25,7 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
+            <p>This website is programmed and designed by me.</p>
         </footer>
     )
 
