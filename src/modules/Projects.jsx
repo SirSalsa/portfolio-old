@@ -31,8 +31,7 @@ export default function Projects() {
                     <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
                     <div>
                         <h2 id="projects_title">Portfolio Site</h2>
-                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
-                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <p id="projects_desc">This very website! This website has been my summer project, and I have learned a lot building it. Built from the ground up with React JS to have mobile devices in mind. Experimented with new technologies such as Sass and Vite instead of CSS, and Parcel respectively.</p>
                         <div id="projects_skills">
                             <img src={js_url} alt="JS logo" />
                             <img src={react_url} alt="React JS logo" />
