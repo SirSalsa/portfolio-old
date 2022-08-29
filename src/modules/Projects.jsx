@@ -5,6 +5,7 @@ export default function Projects() {
     //Preview Image links
     const portfolio_small_url = new URL('../media/projects/portfolio/portfolio_small.png', import.meta.url);
     const webshop_small_url = new URL('../media/projects/webshop/webshop_small.png', import.meta.url);
+    const moviedb_url = new URL('../media/projects/database/movie_db.png', import.meta.url);
 
     //Skill Image links
     const java_url = new URL('../media/skills/java_small.png', import.meta.url);
@@ -99,7 +100,7 @@ export default function Projects() {
                     </div>
                 </article>
                 <article className="right_project">
-                    <img id="projects_img" src={webshop_small_url} alt="Image of Webshop project" />
+                    <img id="projects_img" src={moviedb_url} alt="Image of Movie Database project" />
                     <div>
                         <h2 id="projects_title">Film Database</h2>
                         <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. </p>
