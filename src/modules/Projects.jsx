@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function Projects() {
 
     //Preview Image links
@@ -22,9 +20,6 @@ export default function Projects() {
     //Button Image links
     const github_url = new URL('../media/skills/github.png', import.meta.url);
     const opentab_url = new URL('../media/projects/opentab.png', import.meta.url);
-
-    // Usestate for rendering overlay with image gallery
-    const [projectstate, setProjectState] = useState("Default");
 
     return (
         <>
@@ -61,8 +56,7 @@ export default function Projects() {
                     <img id="projects_img" src={java_webservice_url} alt="Image of Web Service Controller project" />
                     <div>
                         <h2 id="projects_title">Web Service Controller</h2>
-                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
-                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <p id="projects_desc">A Java Web Service application, that offers different services, built using Spring Boot and the RestFUL api. These services are; a calculator, a Rock, Paper, Scissors game, a CSV reader and an Image randomizer. Also included is a documentation page for guiding users.</p>
                         <div id="projects_skills">
                             <img src={java_url} alt="Java logo" />
                             <img src={springboot_url} alt="Springboot logo" />
@@ -80,8 +74,7 @@ export default function Projects() {
                     <img id="projects_img" src={webshop_small_url} alt="Image of Webshop project" />
                     <div>
                         <h2 id="projects_title">Webshop</h2>
-                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
-                            The portfolio structure is good, highlighting who he is and the work experience he has as a developer.</p>
+                        <p id="projects_desc">First project built with React JS, featuring a simple webshop with randomized price discounts when first loading the site. Customers can add items to cart and then checkout.</p>
                         <div id="projects_skills">
                             <img src={js_url} alt="JS logo" />
                             <img src={react_url} alt="React JS logo" />
@@ -103,8 +96,8 @@ export default function Projects() {
                 <article className="right_project">
                     <img id="projects_img" src={moviedb_url} alt="Image of Movie Database project" />
                     <div>
-                        <h2 id="projects_title">Film Database</h2>
-                        <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. </p>
+                        <h2 id="projects_title">Film Database Program</h2>
+                        <p id="projects_desc">First part I built and designed a movie database using MySql. Features films, actors, directors, genres amongst other categories with mock data. Second part is a Java application that can call upon the database using a variety of methods.</p>
                         <div id="projects_skills">
                             <img src={java_url} alt="Java logo" />
                             <img src={mysql_url} alt="MySQL logo" />
