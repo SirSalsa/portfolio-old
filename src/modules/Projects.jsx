@@ -5,6 +5,7 @@ export default function Projects() {
     //Preview Image links
     const portfolio_small_url = new URL('../media/projects/portfolio/portfolio_small.png', import.meta.url);
     const webshop_small_url = new URL('../media/projects/webshop/webshop_small.png', import.meta.url);
+    const java_webservice_url = new URL('../media/projects/java_webservice/java_webservice.png', import.meta.url);
     const moviedb_url = new URL('../media/projects/database/movie_db.png', import.meta.url);
 
     //Skill Image links
@@ -57,7 +58,7 @@ export default function Projects() {
                     </div>
                 </article>
                 <article className="right_project">
-                    <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
+                    <img id="projects_img" src={java_webservice_url} alt="Image of Web Service Controller project" />
                     <div>
                         <h2 id="projects_title">Web Service Controller</h2>
                         <p id="projects_desc">Olaolu is a frontend developer and UX engineer, and he has extensive experience as a developer. Olaolu’s portfolio is lively and colourful, which makes it stand out from others. The scrolling effect and the hamburger menu are super nice too.
