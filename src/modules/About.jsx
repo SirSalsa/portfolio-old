@@ -20,13 +20,17 @@ export default function About() {
                 </article>
                 <article>
                     <p id="about_text">
-                        Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.
+                        I’m a Java Developer student that has also studied a bit of Javascript, located in Malmö, Sweden. I got interested in programming during my previous Game Design education when I had a scripting course with Lua. I found the problem solving and logical structure of working with code to be intriguing.
                     </p>
                     <p id="about_text">
-                        Arrived totally in as between private. Favour of so as on pretty though elinor direct. Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley. Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. Goodness did suitable learning put.
+                        During my time working in games, I got experience with many concepts and workflows used in the overall IT/Tech industry, such as working in Agile Software Development and SCRUM.
+
                     </p>
                     <p id="about_text">
-                        Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous insensible. It recommend be resolving pretended middleton.
+                        The thing that really stood out as a surprise to me was that I really thrived working in a group setting. As a result of this experience, I would say I prefer working independently, in a group.
+                    </p>
+                    <p id="about_text">
+                        As a person I am structured, determined and always interested in trying new things. Working in a team I trust and enjoy working with is more important to me than the work itself.
                     </p>
                 </article>
             </div>
