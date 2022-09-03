@@ -40,7 +40,7 @@ export default function About() {
                         <p>View Grades</p>
                         <img src={grades_url} alt="Grades icon" />
                     </button>
-                    <button id="about_button" formAction="https://drive.google.com/file/d/1Si_tCh2H4tBWxDw8gIC9U95xHoQWzAdy/view?usp=sharing">
+                    <button id="about_button" formAction="https://drive.google.com/file/d/1I4ZdMHb1E36C0r4HTdC3QmHlinP09ZeL/view?usp=sharing">
                         <p>View CV</p>
                         <img src={cv_url} alt="CV icon" />
                     </button>

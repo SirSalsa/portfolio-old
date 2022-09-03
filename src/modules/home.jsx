@@ -1,4 +1,4 @@
-export default function Home({updateNavState}) {
+export default function Home({ updateNavState }) {
 
     //Image links
     const hello_url = new URL('../media/home/hello.gif', import.meta.url);
@@ -28,19 +28,21 @@ export default function Home({updateNavState}) {
                     <img id="home_img" src={portait_url} alt="portrait of me" />
                 </article>
             </div>
-            <div className="home_links">
-                <article>
-                    <img src={project_url} width="30px" alt="" />
-                    <p onClick={swapTab}>Projects</p>
-                </article>
-                <article>
-                    <img src={about_url} width="30px" alt="" />
-                    <p onClick={swapTab}>About</p>
-                </article>
-                <article>
-                    <img src={skills_url} width="30px" alt="" />
-                    <p onClick={swapTab}>Skills</p>
-                </article>
+            <div>
+                <form id="home_buttons_wrapper" target="_blank">
+                    <button id="home_buttons" onClick={swapTab}>
+                        <img src={project_url} alt="Projects Icon" />
+                        <p>Projects</p>
+                    </button>
+                    <button id="home_buttons" onClick={swapTab}>
+                        <img src={about_url} alt="About Icon" />
+                        <p>About</p>
+                    </button>
+                    <button id="home_buttons" onClick={swapTab}>
+                        <img src={skills_url} alt="Skills Icon" />
+                        <p>Skills</p>
+                    </button>
+                </form>
             </div>
 
         </>

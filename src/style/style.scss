@@ -137,35 +137,42 @@ main {
     width: 400px;
 }
 
-.home_links {
+#home_buttons_wrapper {
+    padding-top: 40px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    gap: 15%;
-    padding-top: 40px;
+    justify-content:center;
+    gap: 100px;
 }
 
-.home_links>article {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-
-    background-color: $text_color;
-    padding: 20px;
-    width: 100px;
-    border-radius: 20px;
-    font-size: 20px;
+#home_buttons {
+    font-size: 19px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $text_color;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    height: 70px;
+    border-radius: 20px;
 }
 
-.home_links>article:hover {
+#home_buttons>img {
+    width: 35px;
+    margin-left: 5px;
+}
+
+#home_buttons>p {
+    margin-right: 5px;
+}
+
+#home_buttons:hover {
     cursor: pointer;
-    color: $text_hovercolor;
-}
-
-.home_links>article>p {
-    padding-left: 10px;
+    background-color: $text_hovercolor;
 }
 
 // Projects Page
@@ -420,6 +427,10 @@ footer>p {
         width: 300px;
     }
 
+    #home_buttons_wrapper {
+        gap: 50px;
+    }
+
     //Projects
     #projects_img {
         width: 400px;
@@ -500,18 +511,11 @@ footer>p {
         width: 250px;
     }
 
-    .home_links {
+    #home_buttons_wrapper {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-    }
-
-    .home_links>article {
-        display: flex;
-        flex-flow: row nowrap;
-        max-width: 100px;
-        justify-content: center;
-        margin: 10px;
+        gap: 10px;
     }
 
     //About

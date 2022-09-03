@@ -40,10 +40,6 @@ export default function Projects() {
                             <img src={sass_url} alt="Sass logo" />
                         </div>
                         <form id="projects_buttons_wrapper" target="_blank">
-                            <button id="projects_buttons" formAction="https://sirsalsa.github.io/JAVA21-AJS-slutprojekt-torsten-lareke/">
-                                <p>View Live</p>
-                                <img src={opentab_url} alt="New tab icon" />
-                            </button>
                             <button id="projects_buttons" formAction="https://github.com/SirSalsa/portfolio-vite">
                                 <p>View Repo</p>
                                 <img src={github_url} alt="Github Logo" />
