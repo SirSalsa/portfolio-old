@@ -36,11 +36,11 @@ export default function About() {
             </div>
             <div className="about_buttons">
                 <form id="about_buttons_wrapper" target="_blank">
-                    <button id="about_button" formAction="https://drive.google.com/file/d/1VEOzceSZkoz_yEeUf6tMlqYiHCzj3SLH/view?usp=sharing">
+                    <button id="about_button" formAction="https://drive.google.com/file/d/1x_12Qx52ytaDLGUuavmGHzUXKUDuY9BY/view?usp=share_link">
                         <p>View Grades</p>
                         <img src={grades_url} alt="Grades icon" />
                     </button>
-                    <button id="about_button" formAction="https://drive.google.com/file/d/1I4ZdMHb1E36C0r4HTdC3QmHlinP09ZeL/view?usp=sharing">
+                    <button id="about_button" formAction="https://drive.google.com/file/d/18Mti1pgJeeQZ0ci-s3oold7Ah3ZnK3iV/view?usp=share_link">
                         <p>View CV</p>
                         <img src={cv_url} alt="CV icon" />
                     </button>

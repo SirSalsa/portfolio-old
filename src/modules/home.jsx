@@ -1,7 +1,6 @@
 export default function Home({ updateNavState }) {
 
     //Image links
-    const hello_url = new URL('../media/home/hello.gif', import.meta.url);
     const portait_url = new URL('../media/home/home_portrait.jpg', import.meta.url);
 
     //Icon links
@@ -22,7 +21,7 @@ export default function Home({ updateNavState }) {
                     <h1 id="home_name">Torsten Lareke</h1>
                     <h4 id="home_jobtitle">Java Developer Student</h4>
                     <p id="home_desc">I'm a Java Developer Student with Javascript knowledge, located in Malmö, Sweden. </p>
-                    <p id="home_desc">Looking for internship during Jan-June 2023.</p>
+                    <p id="home_desc">Looking for internship during Jan-May 2023.</p>
                 </article>
                 <article>
                     <img id="home_img" src={portait_url} alt="portrait of me" />
