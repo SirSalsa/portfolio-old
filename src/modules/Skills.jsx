@@ -16,6 +16,7 @@ export default function Skills() {
     const eclipse_url = new URL('../media/skills/eclipse.png', import.meta.url);
     const android_url = new URL('../media/skills/android_studio.png', import.meta.url);
     const kotlin_url = new URL('../media/skills/kotlin.png', import.meta.url);
+    const javafx_url = new URL('../media/skills/javafx.png', import.meta.url);
 
     return (
         <>
@@ -61,6 +62,10 @@ export default function Skills() {
                 <article>
                     <img id="skills_img" src={springboot_url} alt="Spring Boot Logo" />
                     <p id="skills_text">Spring Boot</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={javafx_url} alt="JavaFX Logo" />
+                    <p id="skills_text">JavaFX</p>
                 </article>
                 <article>
                     <img id="skills_img" src={github_url} alt="Github Logo" />

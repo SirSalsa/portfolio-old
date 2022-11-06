@@ -4,6 +4,8 @@ import '../style/zoom_style.scss'
 export default function Projects() {
 
     //Preview Image links
+    const voice_to_news_url = new URL('../media/projects/voice_to_news/voice_to_news2.png', import.meta.url);
+    const currency_converter_url = new URL('../media/projects/currency_converter/currency_converter.png', import.meta.url);
     const portfolio_small_url = new URL('../media/projects/portfolio/portfolio.png', import.meta.url);
     const webshop_url = new URL('../media/projects/webshop/webshop.png', import.meta.url);
     const java_webservice_url = new URL('../media/projects/java_webservice/java_webservice.png', import.meta.url);
@@ -19,10 +21,14 @@ export default function Projects() {
     const restful_url = new URL('../media/skills/api_rest.png', import.meta.url);
     const sass_url = new URL('../media/skills/sass.png', import.meta.url);
     const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);
+    const javafx_url = new URL('../media/skills/javafx.png', import.meta.url);
+    const kotlin_url = new URL('../media/skills/kotlin.png', import.meta.url);
+    const android_url = new URL('../media/skills/android_studio.png', import.meta.url);
 
     //Button Image links
     const github_url = new URL('../media/skills/github.png', import.meta.url);
     const opentab_url = new URL('../media/projects/opentab.png', import.meta.url);
+    const donwload_url = new URL('../media/projects/download.png', import.meta.url);
 
     return (
         <>
@@ -30,6 +36,52 @@ export default function Projects() {
                 <h1>My Projects</h1>
             </div>
             <div className="projects_wrapper">
+            <article className="left_project">
+                    <Zoom>
+                        <img id="projects_img" src={voice_to_news_url} alt="Image of Voice-To-News App" />
+                    </Zoom>
+                    <div>
+                        <h2 id="projects_title">Voice-To-News Android App</h2>
+                        <p id="projects_desc">An Android app built in Android Studio and coded in Kotlin. The app allows the user to search for 
+                        news articles with a recorded search term. The result is a scrollable window filled with articles.</p>
+                        <div id="projects_skills">
+                            <img src={kotlin_url} alt="Kotlin logo" />
+                            <img src={android_url} alt="Android Studio logo" />
+                        </div>
+                        <form id="projects_buttons_wrapper" target="_blank">
+                            <button id="projects_buttons" formAction="https://github.com/SirSalsa/java21_android/tree/main/Uppgifter/VoiceToNewsApp">
+                                <p>View Repo</p>
+                                <img src={github_url} alt="Github Logo" />
+                            </button>
+                            <button id="projects_buttons" formAction="https://drive.google.com/file/d/1e7xo5_PlnkSHh7NKk8ZYM86h2TqVL6EI/view?usp=share_link">
+                                <p>Get APK</p>
+                                <img src={donwload_url} alt="New tab icon" />
+                            </button>
+                        </form>
+                    </div>
+                </article>
+            <article className="right_project">
+                    <Zoom>
+                        <img id="projects_img" src={currency_converter_url} alt="Image of Currency Coverter" />
+                    </Zoom>
+                    <div>
+                        <h2 id="projects_title">Currency Coverter</h2>
+                        <p id="projects_desc">A Java desktop program built in JavaFX that uses a currency conversion api. It offers two services,
+                        the first is the currency converter, that checks how much an amount of a specific currency is worth compared to another. 
+                        The other [Pictured], shows the historical value difference between two currencies.</p>
+                        <div id="projects_skills">
+                            <img src={java_url} alt="Java logo" />
+                            <img src={javafx_url} alt="JavaFX logo" />
+                            <img src={restful_url} alt="Restful API logo" />
+                        </div>
+                        <form id="projects_buttons_wrapper" target="_blank">
+                            <button id="projects_buttons" formAction="https://github.com/SirSalsa/java21_AJ_CurrencyConverter">
+                                <p>View Repo</p>
+                                <img src={github_url} alt="Github Logo" />
+                            </button>
+                        </form>
+                    </div>
+                </article>
                 <article className="left_project">
                     <Zoom>
                         <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
