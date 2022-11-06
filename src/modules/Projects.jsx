@@ -53,9 +53,9 @@ export default function Projects() {
                                 <p>View Repo</p>
                                 <img src={github_url} alt="Github Logo" />
                             </button>
-                            <button id="projects_buttons" formAction="https://drive.google.com/file/d/1e7xo5_PlnkSHh7NKk8ZYM86h2TqVL6EI/view?usp=share_link">
+                            <button id="projects_buttons" formAction="https://drive.google.com/file/d/1yAi4x_WGrU75mq0cM1YpYfbitbs3G77S/view?usp=share_link">
                                 <p>Get APK</p>
-                                <img src={donwload_url} alt="New tab icon" />
+                                <img src={donwload_url} alt="Download icon" />
                             </button>
                         </form>
                     </div>
