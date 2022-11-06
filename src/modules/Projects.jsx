@@ -1,8 +1,11 @@
+import Zoom from 'react-medium-image-zoom'
+import '../style/zoom_style.scss'
+
 export default function Projects() {
 
     //Preview Image links
-    const portfolio_small_url = new URL('../media/projects/portfolio/portfolio_small.png', import.meta.url);
-    const webshop_small_url = new URL('../media/projects/webshop/webshop_small.png', import.meta.url);
+    const portfolio_small_url = new URL('../media/projects/portfolio/portfolio.png', import.meta.url);
+    const webshop_url = new URL('../media/projects/webshop/webshop.png', import.meta.url);
     const java_webservice_url = new URL('../media/projects/java_webservice/java_webservice.png', import.meta.url);
     const moviedb_url = new URL('../media/projects/database/movie_db.png', import.meta.url);
 
@@ -28,7 +31,9 @@ export default function Projects() {
             </div>
             <div className="projects_wrapper">
                 <article className="left_project">
-                    <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
+                    <Zoom>
+                        <img id="projects_img" src={portfolio_small_url} alt="Image of Portfolio project" />
+                    </Zoom>
                     <div>
                         <h2 id="projects_title">Portfolio Site</h2>
                         <p id="projects_desc">This very website! This website has been my summer project, and I have learned a lot building it. Built from the ground up with React JS to have mobile devices in mind. Experimented with new technologies such as Sass and Vite instead of CSS, and Parcel respectively.</p>
@@ -48,7 +53,9 @@ export default function Projects() {
                     </div>
                 </article>
                 <article className="right_project">
-                    <img id="projects_img" src={java_webservice_url} alt="Image of Web Service Controller project" />
+                    <Zoom>
+                        <img id="projects_img" src={java_webservice_url} alt="Image of Web Service Controller project" />
+                    </Zoom>
                     <div>
                         <h2 id="projects_title">Web Service Controller</h2>
                         <p id="projects_desc">A Java Web Service application, that offers different services, built using Spring Boot and the RestFUL api. These services are; a calculator, a Rock, Paper, Scissors game, a CSV reader and an Image randomizer. Also included is a documentation page for guiding users.</p>
@@ -66,7 +73,9 @@ export default function Projects() {
                     </div>
                 </article>
                 <article className="left_project">
-                    <img id="projects_img" src={webshop_small_url} alt="Image of Webshop project" />
+                    <Zoom>
+                        <img id="projects_img" src={webshop_url} alt="Image of Webshop project" />
+                    </Zoom>
                     <div>
                         <h2 id="projects_title">Webshop</h2>
                         <p id="projects_desc">First project built with React JS, featuring a simple webshop with randomized price discounts when first loading the site. Customers can add items to cart and then checkout.</p>
@@ -89,7 +98,9 @@ export default function Projects() {
                     </div>
                 </article>
                 <article className="right_project">
-                    <img id="projects_img" src={moviedb_url} alt="Image of Movie Database project" />
+                    <Zoom>
+                        <img id="projects_img" src={moviedb_url} alt="Image of Movie Database project" />
+                    </Zoom>
                     <div>
                         <h2 id="projects_title">Film Database Program</h2>
                         <p id="projects_desc">First part I built and designed a movie database using MySql. Features films, actors, directors, genres amongst other categories with mock data. Second part is a Java application that can call upon the database using a variety of methods.</p>
