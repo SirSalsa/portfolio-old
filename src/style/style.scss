@@ -356,15 +356,19 @@ main {
     padding: 20px;
     border-radius: 25px;
     background-color: $skill_backgroundcolor;
+    height: 150px;
+    width: 90px;
 }
 
 #skills_text {
     text-align: center;
     font-size: 20px;
+    word-wrap: break-word;
 }
 
 #skills_img {
-    width: 100px;
+    width: 90px;
+    height: 90px;
     padding-bottom: 10px;
 }
 
@@ -584,10 +588,13 @@ footer>p {
 
     .skills_wrapper>article {
         padding: 15px;
+        width: 70px;
+        height: 120px;
     }
 
     #skills_img {
         width: 70px;
+        height: 70px;
     }
 
     #skills_text {

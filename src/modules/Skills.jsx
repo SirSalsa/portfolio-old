@@ -14,6 +14,8 @@ export default function Skills() {
     const vscode_url = new URL('../media/skills/vscode.png', import.meta.url);
     const springboot_url = new URL('../media/skills/springboot.png', import.meta.url);
     const eclipse_url = new URL('../media/skills/eclipse.png', import.meta.url);
+    const android_url = new URL('../media/skills/android_studio.png', import.meta.url);
+    const kotlin_url = new URL('../media/skills/kotlin.png', import.meta.url);
 
     return (
         <>
@@ -32,7 +34,10 @@ export default function Skills() {
                     <img id="skills_img" src={js_url} alt="Javascript Logo" />
                     <p id="skills_text">JavaScript</p>
                 </article>
-
+                <article>
+                    <img id="skills_img" src={kotlin_url} alt="Kotlin Logo" />
+                    <p id="skills_text">Kotlin</p>
+                </article>
                 <article>
                     <img id="skills_img" src={react_url} alt="React.JS Logo" />
                     <p id="skills_text">React JS</p>
@@ -62,8 +67,8 @@ export default function Skills() {
                     <p id="skills_text">Github</p>
                 </article>
                 <article>
-                    <img id="skills_img" src={agile_url} alt="Github Logo" />
-                    <p id="skills_text">Agile</p>
+                    <img id="skills_img" src={agile_url} alt="Agile Logo" />
+                    <p id="skills_text">Agile Method</p>
                 </article>
                 <article>
                     <img id="skills_img" src={trello_url} alt="Trello Logo" />
@@ -73,10 +78,13 @@ export default function Skills() {
                     <img id="skills_img" src={vscode_url} alt="VS Code Logo" />
                     <p id="skills_text">VS Code</p>
                 </article>
-
                 <article>
                     <img id="skills_img" src={eclipse_url} alt="Eclipse Logo" />
                     <p id="skills_text">Eclipse</p>
+                </article>
+                <article>
+                    <img id="skills_img" src={android_url} alt="Android Studio Logo" />
+                    <p id="skills_text">Android Studio</p>
                 </article>
             </div>
         </>
